@@ -35,7 +35,7 @@ class Blackjack
         puts
       end
 
-      deal_card_to("Player") if player_choice == "h"
+      deal_card_to("Player") if response == "h"
       puts "Player score: #{@player_hand.score}"
     end
   end
@@ -47,7 +47,7 @@ class Blackjack
     elsif user == "Dealer"
       @dealer_hand.add(card)
     end
-    puts "#{user} was dealt #{card.name}"
+    puts "#{user} was dealt #{card.rank}#{card.suit}"
   end
 
   def valid_input?(input)
