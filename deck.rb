@@ -15,6 +15,6 @@ class Deck
   end
 
   def draw!
-      collection.pop
+    collection.pop
   end
 end
